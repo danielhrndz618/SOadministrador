@@ -19,6 +19,7 @@ namespace Simulacion_Procesos
         //Declaración de Variable String para obtener el nombre del proceso en la tabla para su eliminacion
         string Str_Obt_Proc;
         public ContextMenuStrip menu;
+        public Process selected_process;
         public Form1()
         {
             InitializeComponent();
@@ -84,6 +85,29 @@ namespace Simulacion_Procesos
 
             //Llamado al proceso para actualizar la tabla
             ActualizarTabla(); 
+        }
+
+
+        public Process getProcess(String ProcessName)
+        {
+            try 
+            {
+                //Por cada proceso que haya se comparara su nombre con el nombre del proceso que se desea eliminar.
+                foreach(Process proceso in Process.GetProcesses())
+                {
+                    if (proceso.ProcessName == ProcessName)
+                    {
+                        return proceso;
+                    }
+                }
+
+            }
+                //En caso no se seleccione un proceso mostrara el siguiente mensaje.
+            catch (Exception x) 
+            {
+                MessageBox.Show("No se ha seleccionado ningun proceso para detener." + x, "Error al Detener Proceso", MessageBoxButtons.OK);
+            }
+            return new Process();
         }
 
    
@@ -216,8 +240,19 @@ namespace Simulacion_Procesos
                 }
                 this.menu.Show(dgv_Proceso, new Point(e.X, e.Y));
                 this.menu.ItemClicked += Menu_ItemClicked;
+
+                String nameProcess = dgv_Proceso.SelectedRows[0].Cells[1].Value.ToString();
+                this.selected_process = this.getProcess(nameProcess);
             }
 
+        }
+
+
+        public void killProcess(Process proc)
+        {
+            proc.Kill();
+            this.ActualizarTabla();
+            MessageBox.Show("Proceso: " + proc.ProcessName + " finalizado");
         }
 
         private void Menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -226,7 +261,7 @@ namespace Simulacion_Procesos
             switch (e.ClickedItem.Name.ToString())
             {
                 case "Delete":
-                    MessageBox.Show("Se finalizara la tarea lol");
+                    this.killProcess(this.selected_process);
                     break;
                 case "Location":
                     MessageBox.Show("Mostraremos la ubicacion");
