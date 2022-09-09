@@ -242,6 +242,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             this.dgv_Proceso.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Proceso.RowTemplate.Height = 24;
+            this.dgv_Proceso.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_Proceso_MouseClick);
             // 
             // Column1
             // 

@@ -18,6 +18,7 @@ namespace Simulacion_Procesos
     {
         //Declaración de Variable String para obtener el nombre del proceso en la tabla para su eliminacion
         string Str_Obt_Proc;
+        public ContextMenuStrip menu;
         public Form1()
         {
             InitializeComponent();
@@ -193,6 +194,50 @@ namespace Simulacion_Procesos
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_Proceso_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+            }
+            else
+            {
+                this.menu = new System.Windows.Forms.ContextMenuStrip();
+                int mousePosition = dgv_Proceso.HitTest(e.X, e.Y).RowIndex;
+                var hti = dgv_Proceso.HitTest(e.X, e.Y);
+                dgv_Proceso.ClearSelection();
+                dgv_Proceso.Rows[hti.RowIndex].Selected = true;
+                if(mousePosition >= 0)
+                {
+                    this.menu.Items.Add("Finalizar Proceso").Name = "Delete";
+                    this.menu.Items.Add("Ver Detalles").Name = "Details";
+                    this.menu.Items.Add("Abrir Ubicacion").Name = "Location";
+                }
+                this.menu.Show(dgv_Proceso, new Point(e.X, e.Y));
+                this.menu.ItemClicked += Menu_ItemClicked;
+            }
+
+        }
+
+        private void Menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            this.menu.Visible = false;
+            switch (e.ClickedItem.Name.ToString())
+            {
+                case "Delete":
+                    MessageBox.Show("Se finalizara la tarea lol");
+                    break;
+                case "Location":
+                    MessageBox.Show("Mostraremos la ubicacion");
+                    break;
+                case "Details":
+                    MessageBox.Show("Detalles de la aplicacion");
+                    break;
+                default:
+                    MessageBox.Show("No haremos ni vrg");
+                    break;
+            }
         }
     }
 }
