@@ -35,6 +35,8 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pRAM = new System.Diagnostics.PerformanceCounter();
             this.pCPU = new System.Diagnostics.PerformanceCounter();
@@ -59,7 +61,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Btn_Detener = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.lbl_Contador = new System.Windows.Forms.Label();
             this.BtnGrafica = new System.Windows.Forms.Button();
@@ -126,6 +127,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
             this.panel3.Controls.Add(this.Grafico);
             this.panel3.Controls.Add(this.LblPorRAM);
             this.panel3.Controls.Add(this.LblPorCPU);
@@ -140,9 +142,10 @@
             // 
             // Grafico
             // 
-            this.Grafico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.Grafico.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.Grafico.BorderSkin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.Grafico.BackColor = System.Drawing.Color.Transparent;
+            this.Grafico.BackSecondaryColor = System.Drawing.Color.White;
+            this.Grafico.BorderlineWidth = 0;
+            this.Grafico.BorderSkin.BackColor = System.Drawing.Color.Black;
             this.Grafico.BorderSkin.PageColor = System.Drawing.Color.Black;
             chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea1.AxisX.LineColor = System.Drawing.Color.White;
@@ -166,7 +169,6 @@
             this.Grafico.Legends.Add(legend1);
             resources.ApplyResources(this.Grafico, "Grafico");
             this.Grafico.Name = "Grafico";
-            this.Grafico.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -188,13 +190,14 @@
             // LblPorRAM
             // 
             resources.ApplyResources(this.LblPorRAM, "LblPorRAM");
-            this.LblPorRAM.BackColor = System.Drawing.Color.Black;
+            this.LblPorRAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
             this.LblPorRAM.Name = "LblPorRAM";
             this.LblPorRAM.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // LblPorCPU
             // 
             resources.ApplyResources(this.LblPorCPU, "LblPorCPU");
+            this.LblPorCPU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
             this.LblPorCPU.Name = "LblPorCPU";
             this.LblPorCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -207,6 +210,7 @@
             // LblNombreRam
             // 
             resources.ApplyResources(this.LblNombreRam, "LblNombreRam");
+            this.LblNombreRam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
             this.LblNombreRam.Name = "LblNombreRam";
             this.LblNombreRam.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -219,6 +223,7 @@
             // LblNombreCPU
             // 
             resources.ApplyResources(this.LblNombreCPU, "LblNombreCPU");
+            this.LblNombreCPU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
             this.LblNombreCPU.Name = "LblNombreCPU";
             this.LblNombreCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -226,7 +231,16 @@
             // 
             this.dgv_Proceso.AllowUserToAddRows = false;
             this.dgv_Proceso.AllowUserToDeleteRows = false;
-            this.dgv_Proceso.BackgroundColor = System.Drawing.Color.Black;
+            this.dgv_Proceso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.dgv_Proceso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Proceso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Proceso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Proceso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -235,12 +249,25 @@
             this.Column3,
             this.Column4,
             this.Column5});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Proceso.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Proceso.EnableHeadersVisualStyles = false;
+            this.dgv_Proceso.GridColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.dgv_Proceso, "dgv_Proceso");
             this.dgv_Proceso.Name = "dgv_Proceso";
             this.dgv_Proceso.ReadOnly = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.dgv_Proceso.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Proceso.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Hack NF", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dgv_Proceso.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Proceso.RowTemplate.Height = 24;
             this.dgv_Proceso.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_Proceso_MouseClick);
             // 
@@ -283,25 +310,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(77)))));
-            this.panel2.Controls.Add(this.Btn_Detener);
             this.panel2.Controls.Add(this.BtnActualizar);
             this.panel2.Controls.Add(this.lbl_Contador);
             this.panel2.Controls.Add(this.BtnGrafica);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Name = "panel2";
-            // 
-            // Btn_Detener
-            // 
-            this.Btn_Detener.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(77)))));
-            this.Btn_Detener.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Detener.FlatAppearance.BorderSize = 0;
-            this.Btn_Detener.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            resources.ApplyResources(this.Btn_Detener, "Btn_Detener");
-            this.Btn_Detener.ForeColor = System.Drawing.Color.White;
-            this.Btn_Detener.Name = "Btn_Detener";
-            this.Btn_Detener.UseVisualStyleBackColor = false;
-            this.Btn_Detener.MouseEnter += new System.EventHandler(this.Btn_Detener_MouseEnter);
             // 
             // BtnActualizar
             // 
@@ -313,6 +327,7 @@
             this.BtnActualizar.ForeColor = System.Drawing.Color.White;
             this.BtnActualizar.Name = "BtnActualizar";
             this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click_1);
             // 
             // lbl_Contador
             // 
@@ -330,6 +345,7 @@
             this.BtnGrafica.ForeColor = System.Drawing.Color.White;
             this.BtnGrafica.Name = "BtnGrafica";
             this.BtnGrafica.UseVisualStyleBackColor = false;
+            this.BtnGrafica.Click += new System.EventHandler(this.BtnGrafica_Click);
             // 
             // Form1
             // 
@@ -381,7 +397,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button Btn_Detener;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Label lbl_Contador;
         private System.Windows.Forms.Button BtnGrafica;
