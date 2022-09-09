@@ -107,5 +107,11 @@
   <ItemGroup>
     <None Include="Imagenes\icons8_close_window_32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_align_text_left_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_line_chart_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

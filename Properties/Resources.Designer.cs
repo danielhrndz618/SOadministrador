@@ -73,6 +73,26 @@ namespace Simulacion_Procesos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_align_text_left_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_align_text_left_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_align_text_left_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_align_text_left_321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8_close_16", resourceCulture);
@@ -106,6 +126,26 @@ namespace Simulacion_Procesos.Properties {
         internal static System.Drawing.Bitmap icons8_close_window_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_close_window_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_line_chart_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_line_chart_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_line_chart_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_line_chart_321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
