@@ -14,7 +14,7 @@ using System.Diagnostics;
 
 namespace Simulacion_Procesos
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Form1 : Form 
     {
         //Declaración de Variable String para obtener el nombre del proceso en la tabla para su eliminacion
         string Str_Obt_Proc;

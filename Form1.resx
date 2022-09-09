@@ -117,168 +117,264 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Btn_Detener.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Btn_Detener.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9.75pt, style=Bold, Italic</value>
-  </data>
-  <data name="Btn_Detener.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="Btn_Detener.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 113</value>
-  </data>
-  <data name="Btn_Detener.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Btn_Detener.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="Btn_Detener.Text" xml:space="preserve">
-    <value>Detener Proceso</value>
-  </data>
-  <data name="&gt;&gt;Btn_Detener.Name" xml:space="preserve">
-    <value>Btn_Detener</value>
-  </data>
-  <data name="&gt;&gt;Btn_Detener.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Btn_Detener.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;Btn_Detener.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BtnActualizar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="BtnActualizar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9.75pt, style=Bold, Italic</value>
-  </data>
-  <data name="BtnActualizar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="BtnActualizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 23</value>
-  </data>
-  <data name="BtnActualizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 60</value>
-  </data>
-  <data name="BtnActualizar.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="BtnActualizar.Text" xml:space="preserve">
-    <value>Actualizar Tabla</value>
-  </data>
-  <data name="&gt;&gt;BtnActualizar.Name" xml:space="preserve">
-    <value>BtnActualizar</value>
-  </data>
-  <data name="&gt;&gt;BtnActualizar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnActualizar.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;BtnActualizar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbl_Contador.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_Contador.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 7.8pt, style=Bold, Italic</value>
-  </data>
-  <data name="lbl_Contador.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 287</value>
-  </data>
-  <data name="lbl_Contador.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lbl_Contador.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
-  </data>
-  <data name="lbl_Contador.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lbl_Contador.Text" xml:space="preserve">
-    <value>Contador Procesos:</value>
-  </data>
-  <data name="&gt;&gt;lbl_Contador.Name" xml:space="preserve">
-    <value>lbl_Contador</value>
-  </data>
-  <data name="&gt;&gt;lbl_Contador.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Contador.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lbl_Contador.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BtnGrafica.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="BtnGrafica.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 9.75pt, style=Bold, Italic</value>
-  </data>
-  <data name="BtnGrafica.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="BtnGrafica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 191</value>
-  </data>
-  <data name="BtnGrafica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 60</value>
-  </data>
-  <data name="BtnGrafica.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="BtnGrafica.Text" xml:space="preserve">
-    <value>Gráfica CPU y RAM</value>
-  </data>
-  <data name="&gt;&gt;BtnGrafica.Name" xml:space="preserve">
-    <value>BtnGrafica</value>
-  </data>
-  <data name="&gt;&gt;BtnGrafica.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnGrafica.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;BtnGrafica.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 60</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 344</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="pRAM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>191, 23</value>
+  </metadata>
+  <metadata name="pCPU.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>284, 22</value>
+  </metadata>
+  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>105, 19</value>
+  </metadata>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Grafico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 169</value>
+  </data>
+  <data name="Grafico.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="Grafico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>704, 205</value>
+  </data>
+  <data name="Grafico.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="Grafico.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Grafico.Name" xml:space="preserve">
+    <value>Grafico</value>
+  </data>
+  <data name="&gt;&gt;Grafico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;Grafico.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;Grafico.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LblPorRAM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblPorRAM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>793, 113</value>
+  </data>
+  <data name="LblPorRAM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="LblPorRAM.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="LblPorRAM.Text" xml:space="preserve">
+    <value>0 %</value>
+  </data>
+  <data name="LblPorRAM.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LblPorRAM.Name" xml:space="preserve">
+    <value>LblPorRAM</value>
+  </data>
+  <data name="&gt;&gt;LblPorRAM.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;LblPorRAM.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;LblPorRAM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblPorCPU.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblPorCPU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>793, 73</value>
+  </data>
+  <data name="LblPorCPU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 19</value>
+  </data>
+  <data name="LblPorCPU.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="LblPorCPU.Text" xml:space="preserve">
+    <value>0 %</value>
+  </data>
+  <data name="LblPorCPU.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LblPorCPU.Name" xml:space="preserve">
+    <value>LblPorCPU</value>
+  </data>
+  <data name="&gt;&gt;LblPorCPU.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;LblPorCPU.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;LblPorCPU.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ProgressBarRAM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 109</value>
+  </data>
+  <data name="ProgressBarRAM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 23</value>
+  </data>
+  <data name="ProgressBarRAM.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="ProgressBarRAM.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarRAM.Name" xml:space="preserve">
+    <value>ProgressBarRAM</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarRAM.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroProgressBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarRAM.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarRAM.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LblNombreRam.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblNombreRam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 113</value>
+  </data>
+  <data name="LblNombreRam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 19</value>
+  </data>
+  <data name="LblNombreRam.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="LblNombreRam.Text" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="LblNombreRam.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LblNombreRam.Name" xml:space="preserve">
+    <value>LblNombreRam</value>
+  </data>
+  <data name="&gt;&gt;LblNombreRam.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;LblNombreRam.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;LblNombreRam.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ProgressBarCPU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 69</value>
+  </data>
+  <data name="ProgressBarCPU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 23</value>
+  </data>
+  <data name="ProgressBarCPU.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="ProgressBarCPU.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCPU.Name" xml:space="preserve">
+    <value>ProgressBarCPU</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCPU.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroProgressBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCPU.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCPU.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LblNombreCPU.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblNombreCPU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 73</value>
+  </data>
+  <data name="LblNombreCPU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
+  </data>
+  <data name="LblNombreCPU.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="LblNombreCPU.Text" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="LblNombreCPU.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LblNombreCPU.Name" xml:space="preserve">
+    <value>LblNombreCPU</value>
+  </data>
+  <data name="&gt;&gt;LblNombreCPU.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;LblNombreCPU.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;LblNombreCPU.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -316,7 +412,7 @@
     <value>Memoria Virtual</value>
   </data>
   <data name="dgv_Proceso.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 62</value>
+    <value>247, 32</value>
   </data>
   <data name="dgv_Proceso.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -325,7 +421,7 @@
     <value>708, 342</value>
   </data>
   <data name="dgv_Proceso.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;dgv_Proceso.Name" xml:space="preserve">
     <value>dgv_Proceso</value>
@@ -334,213 +430,255 @@
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgv_Proceso.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel3</value>
   </data>
   <data name="&gt;&gt;dgv_Proceso.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <metadata name="pRAM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>191, 23</value>
-  </metadata>
-  <metadata name="pCPU.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>284, 22</value>
-  </metadata>
-  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>105, 19</value>
-  </metadata>
-  <data name="LblNombreCPU.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Btn_Detener.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="LblNombreCPU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 103</value>
+  <data name="Btn_Detener.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold, Italic</value>
   </data>
-  <data name="LblNombreCPU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 19</value>
+  <data name="Btn_Detener.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="LblNombreCPU.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="Btn_Detener.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="LblNombreCPU.Text" xml:space="preserve">
-    <value>CPU</value>
+  <data name="Btn_Detener.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 113</value>
   </data>
-  <data name="LblNombreCPU.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="Btn_Detener.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
   </data>
-  <data name="&gt;&gt;LblNombreCPU.Name" xml:space="preserve">
-    <value>LblNombreCPU</value>
+  <data name="Btn_Detener.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;LblNombreCPU.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="Btn_Detener.Text" xml:space="preserve">
+    <value>Detener Proceso</value>
   </data>
-  <data name="&gt;&gt;LblNombreCPU.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Btn_Detener.Name" xml:space="preserve">
+    <value>Btn_Detener</value>
   </data>
-  <data name="&gt;&gt;LblNombreCPU.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Btn_Detener.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Btn_Detener.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;Btn_Detener.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BtnActualizar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnActualizar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold, Italic</value>
+  </data>
+  <data name="BtnActualizar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="BtnActualizar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnActualizar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="BtnActualizar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 60</value>
+  </data>
+  <data name="BtnActualizar.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="ProgressBarCPU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 99</value>
+  <data name="BtnActualizar.Text" xml:space="preserve">
+    <value>Actualizar Tabla</value>
   </data>
-  <data name="ProgressBarCPU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 23</value>
+  <data name="&gt;&gt;BtnActualizar.Name" xml:space="preserve">
+    <value>BtnActualizar</value>
   </data>
-  <data name="ProgressBarCPU.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="&gt;&gt;BtnActualizar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ProgressBarCPU.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;BtnActualizar.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;ProgressBarCPU.Name" xml:space="preserve">
-    <value>ProgressBarCPU</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarCPU.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroProgressBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarCPU.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarCPU.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ProgressBarRAM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 139</value>
-  </data>
-  <data name="ProgressBarRAM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 23</value>
-  </data>
-  <data name="ProgressBarRAM.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="ProgressBarRAM.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarRAM.Name" xml:space="preserve">
-    <value>ProgressBarRAM</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarRAM.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroProgressBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarRAM.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProgressBarRAM.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="LblNombreRam.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblNombreRam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 143</value>
-  </data>
-  <data name="LblNombreRam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 19</value>
-  </data>
-  <data name="LblNombreRam.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="LblNombreRam.Text" xml:space="preserve">
-    <value>RAM</value>
-  </data>
-  <data name="LblNombreRam.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;LblNombreRam.Name" xml:space="preserve">
-    <value>LblNombreRam</value>
-  </data>
-  <data name="&gt;&gt;LblNombreRam.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;LblNombreRam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LblNombreRam.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="LblPorCPU.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblPorCPU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 103</value>
-  </data>
-  <data name="LblPorCPU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 19</value>
-  </data>
-  <data name="LblPorCPU.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="LblPorCPU.Text" xml:space="preserve">
-    <value>0 %</value>
-  </data>
-  <data name="LblPorCPU.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;LblPorCPU.Name" xml:space="preserve">
-    <value>LblPorCPU</value>
-  </data>
-  <data name="&gt;&gt;LblPorCPU.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;LblPorCPU.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LblPorCPU.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="LblPorRAM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblPorRAM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>796, 143</value>
-  </data>
-  <data name="LblPorRAM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 19</value>
-  </data>
-  <data name="LblPorRAM.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="LblPorRAM.Text" xml:space="preserve">
-    <value>0 %</value>
-  </data>
-  <data name="LblPorRAM.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;LblPorRAM.Name" xml:space="preserve">
-    <value>LblPorRAM</value>
-  </data>
-  <data name="&gt;&gt;LblPorRAM.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;LblPorRAM.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LblPorRAM.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BtnActualizar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Grafico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 199</value>
+  <data name="lbl_Contador.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="Grafico.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="lbl_Contador.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 7.8pt, style=Bold, Italic</value>
   </data>
-  <data name="Grafico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 205</value>
+  <data name="lbl_Contador.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="Grafico.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="lbl_Contador.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 287</value>
   </data>
-  <data name="Grafico.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lbl_Contador.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
-  <data name="&gt;&gt;Grafico.Name" xml:space="preserve">
-    <value>Grafico</value>
+  <data name="lbl_Contador.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
   </data>
-  <data name="&gt;&gt;Grafico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  <data name="lbl_Contador.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;Grafico.Parent" xml:space="preserve">
+  <data name="lbl_Contador.Text" xml:space="preserve">
+    <value>Contador Procesos:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Contador.Name" xml:space="preserve">
+    <value>lbl_Contador</value>
+  </data>
+  <data name="&gt;&gt;lbl_Contador.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Contador.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;lbl_Contador.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnGrafica.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnGrafica.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold, Italic</value>
+  </data>
+  <data name="BtnGrafica.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="BtnGrafica.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnGrafica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 191</value>
+  </data>
+  <data name="BtnGrafica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 60</value>
+  </data>
+  <data name="BtnGrafica.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BtnGrafica.Text" xml:space="preserve">
+    <value>Gráfica CPU y RAM</value>
+  </data>
+  <data name="&gt;&gt;BtnGrafica.Name" xml:space="preserve">
+    <value>BtnGrafica</value>
+  </data>
+  <data name="&gt;&gt;BtnGrafica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnGrafica.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;BtnGrafica.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 389</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 389</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Grafico.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 35</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>ADMINISTRADOR DE PROCESOS</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -551,6 +689,9 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -564,13 +705,28 @@
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>ADMINISTRADOR DE PROCESOS</value>
-  </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pRAM.Name" xml:space="preserve">
+    <value>pRAM</value>
+  </data>
+  <data name="&gt;&gt;pRAM.Type" xml:space="preserve">
+    <value>System.Diagnostics.PerformanceCounter, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pCPU.Name" xml:space="preserve">
+    <value>pCPU</value>
+  </data>
+  <data name="&gt;&gt;pCPU.Type" xml:space="preserve">
+    <value>System.Diagnostics.PerformanceCounter, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="&gt;&gt;timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">
@@ -609,28 +765,10 @@
   <data name="&gt;&gt;Column5.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pRAM.Name" xml:space="preserve">
-    <value>pRAM</value>
-  </data>
-  <data name="&gt;&gt;pRAM.Type" xml:space="preserve">
-    <value>System.Diagnostics.PerformanceCounter, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pCPU.Name" xml:space="preserve">
-    <value>pCPU</value>
-  </data>
-  <data name="&gt;&gt;pCPU.Type" xml:space="preserve">
-    <value>System.Diagnostics.PerformanceCounter, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timer.Name" xml:space="preserve">
-    <value>timer</value>
-  </data>
-  <data name="&gt;&gt;timer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -83,3 +83,18 @@ D:\Universidad\Semestre 6\SISTEMAS OPERATIVOS 1\Segundo Parcial\Administrador de
 D:\Universidad\Semestre 6\SISTEMAS OPERATIVOS 1\Segundo Parcial\Administrador de Procesos C#\Simulacion_Procesos\obj\Debug\Simulacion_Procesos.csproj.CopyComplete
 D:\Universidad\Semestre 6\SISTEMAS OPERATIVOS 1\Segundo Parcial\Administrador de Procesos C#\Simulacion_Procesos\obj\Debug\Simulacion_Procesos.exe
 D:\Universidad\Semestre 6\SISTEMAS OPERATIVOS 1\Segundo Parcial\Administrador de Procesos C#\Simulacion_Procesos\obj\Debug\Simulacion_Procesos.pdb
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\Simulacion_Procesos.exe.config
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\Simulacion_Procesos.exe
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\Simulacion_Procesos.pdb
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\MetroFramework.Design.dll
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\MetroFramework.dll
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.csproj.AssemblyReference.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.csproj.SuggestedBindingRedirects.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.Form1.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.Properties.Resources.resources
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.csproj.GenerateResource.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.csproj.CoreCompileInputs.cache
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.csproj.CopyComplete
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.exe
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Debug\Simulacion_Procesos.pdb
