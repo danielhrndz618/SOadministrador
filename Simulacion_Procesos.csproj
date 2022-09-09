@@ -95,5 +95,17 @@
   <ItemGroup>
     <None Include="Imagenes\711093.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_close_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_close_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_close_window_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\icons8_close_window_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

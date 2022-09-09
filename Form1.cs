@@ -26,7 +26,10 @@ namespace Simulacion_Procesos
             timer1.Enabled = true;
             
         }
-
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint ="SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         private void ActualizarTabla()
         {
             //limpieza del datagrid
@@ -169,6 +172,27 @@ namespace Simulacion_Procesos
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_Detener_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
