@@ -124,11 +124,20 @@
   <data name="icons8_close_window_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\icons8_close_window_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="procesamiento-por-lotes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\procesamiento-por-lotes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numero-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\numero-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="711093" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\711093.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_close_window_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\icons8_close_window_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_line_chart_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\icons8_line_chart_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_align_text_left_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\icons8_align_text_left_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +151,7 @@
   <data name="icons8_close_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Imagenes\icons8_close_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_line_chart_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Imagenes\icons8_line_chart_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grupo-de-usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Imagenes\grupo-de-usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

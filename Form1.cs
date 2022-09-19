@@ -236,5 +236,10 @@ namespace Simulacion_Procesos
         {
             this.showTable();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
