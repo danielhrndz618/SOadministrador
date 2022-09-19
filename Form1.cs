@@ -213,7 +213,7 @@ namespace Simulacion_Procesos
                     MessageBox.Show("Detalles de la aplicacion");
                     break;
                 default:
-                    MessageBox.Show("No haremos ni vrg");
+                    MessageBox.Show("La opcion seleccionada no es valida");
                     break;
             }
         }
