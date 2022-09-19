@@ -24,8 +24,8 @@ namespace Simulacion_Procesos
             InitializeComponent();
             ActualizarTabla();
             timer1.Enabled = true;
-            
         }
+
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.dll", EntryPoint ="SendMessage")]
@@ -75,10 +75,7 @@ namespace Simulacion_Procesos
             {
                 foreach(Process proceso in Process.GetProcesses())
                 {
-                    if (proceso.ProcessName == ProcessName)
-                    {
-                        return proceso;
-                    }
+		    if(proceso.ProcessName == ProcessName) return proceso;
                 }
             }
             catch (Exception x) 
