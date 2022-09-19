@@ -42,12 +42,10 @@ namespace Simulacion_Procesos
             dgv_Proceso.ColumnHeadersDefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dgv_Proceso.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
            
-
             dgv_Proceso.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgv_Proceso.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_Proceso.MultiSelect = false;
             int Int_Cant_Proc = 1;
-
 
             foreach (Process Proc_Proceso in Process.GetProcesses())
             {
@@ -56,8 +54,6 @@ namespace Simulacion_Procesos
                 Int_Cant_Proc += 1;
             }
             lbl_Contador.Text = "Procesos Actuales: " + (Int_Cant_Proc - 1);    //  cant de procesos   
-
-
         }
 
         private void showTable(){
@@ -84,7 +80,6 @@ namespace Simulacion_Procesos
                         return proceso;
                     }
                 }
-
             }
             catch (Exception x) 
             {
@@ -113,7 +108,6 @@ namespace Simulacion_Procesos
                         ActualizarTabla();
                     }
                 }
-
             }
             catch (Exception x) 
             {
@@ -237,9 +231,5 @@ namespace Simulacion_Procesos
             this.showTable();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
