@@ -32,6 +32,12 @@ namespace Simulacion_Procesos
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         private void ActualizarTabla()
         {
+            progress_cpu.Visible = false;
+            progress_ram.Visible = false;
+            ram_l.Visible = false;
+            cpu_l.Visible = false;
+            disk_l.Visible = false;
+            progress_disk.Visible = false;
             dgv_Proceso.Rows.Clear();
             dgv_Proceso.Columns[0].Name = "Num. Procesos";
             dgv_Proceso.Columns[1].Name = "Procesos";
@@ -57,13 +63,12 @@ namespace Simulacion_Procesos
         }
 
         private void showTable(){
-            LblNombreCPU.Visible = false;
-            LblNombreRam.Visible = false;
-            ProgressBarCPU.Visible = false;
-            ProgressBarRAM.Visible = false;
-            LblPorCPU.Visible = false;
-            LblPorRAM.Visible = false;
-            Grafico.Visible = false;
+            progress_cpu.Visible = false;
+            progress_ram.Visible = false;
+            ram_l.Visible = false;
+            cpu_l.Visible = false;
+            disk_l.Visible = false;
+            progress_disk.Visible = false;
             dgv_Proceso.Visible = true;
             ActualizarTabla(); 
         }
@@ -86,13 +91,6 @@ namespace Simulacion_Procesos
         }
 
            private void Btn_Detener_Click(object sender, EventArgs e){
-            LblNombreCPU.Visible = false;
-            LblNombreRam.Visible = false;
-            ProgressBarCPU.Visible = false;
-            ProgressBarRAM.Visible = false;
-            LblPorCPU.Visible = false;
-            LblPorRAM.Visible = false;
-            Grafico.Visible = false;
             dgv_Proceso.Visible = true;
 
             try 
@@ -122,27 +120,14 @@ namespace Simulacion_Procesos
             timer.Start();
         }
         
-
-        private void Timer_Tick(object sender, EventArgs e){
-            float fCPU = pCPU.NextValue();
-            float fRAM = pRAM.NextValue();
-            ProgressBarCPU.Value = (int)fCPU;
-            ProgressBarRAM.Value = (int)fRAM;
-            LblPorCPU.Text = string.Format("{0:0.00}%", fCPU);
-            LblPorRAM.Text = string.Format("{0:0.00}%", fRAM);
-            Grafico.Series["CPU"].Points.AddY(fCPU);
-            Grafico.Series["RAM"].Points.AddY(fRAM);
-        }
-
         private void showGraphics(){
-            LblNombreCPU.Visible = true;
-            LblNombreRam.Visible = true;
-            ProgressBarCPU.Visible = true;
-            ProgressBarRAM.Visible = true;
-            LblPorCPU.Visible = true;
-            LblPorRAM.Visible = true;
-            Grafico.Visible = true;
             dgv_Proceso.Visible = false;
+            progress_ram.Visible = true;
+            ram_l.Visible = true;
+            disk_l.Visible = true;
+            cpu_l.Visible = true;
+            progress_disk.Visible = true;
+            progress_cpu.Visible = true;
         }
 
 
@@ -228,5 +213,17 @@ namespace Simulacion_Procesos
             this.showTable();
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            progress_cpu.Value = (int)cpu_perf.NextValue();
+            cpu_l.Text = "CPU: " + progress_cpu.Value.ToString() + " %";
+            progress_ram.Value = (int)ram_perf.NextValue();
+            float val = (float) ram_perf.NextValue()/1024;
+            val = 16- val;
+            ram_l.Text = "CPU: " + val.ToString("0.00") + " GB";
+
+            progress_disk.Value = (int)disk_perf.NextValue();
+            disk_l.Text = "Disk Used: " + progress_disk.Value.ToString() + " GB";
+        }
     }
 }
