@@ -13,3 +13,6 @@ C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Release\Si
 C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Release\Simulacion_Procesos.csproj.CopyComplete
 C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Release\Simulacion_Procesos.exe
 C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\obj\Release\Simulacion_Procesos.pdb
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Release\CircularProgressBar.dll
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Release\WinFormAnimation.dll
+C:\Users\olste\OneDrive\Escritorio\Development\C#\SOadministrador\bin\Release\CircularProgressBar.xml

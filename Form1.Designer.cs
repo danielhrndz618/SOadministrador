@@ -30,16 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pRAM = new System.Diagnostics.PerformanceCounter();
-            this.pCPU = new System.Diagnostics.PerformanceCounter();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,13 +43,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Grafico = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.LblPorRAM = new MetroFramework.Controls.MetroLabel();
-            this.LblPorCPU = new MetroFramework.Controls.MetroLabel();
-            this.ProgressBarRAM = new MetroFramework.Controls.MetroProgressBar();
-            this.LblNombreRam = new MetroFramework.Controls.MetroLabel();
-            this.ProgressBarCPU = new MetroFramework.Controls.MetroProgressBar();
-            this.LblNombreCPU = new MetroFramework.Controls.MetroLabel();
+            this.progress_ram = new CircularProgressBar.CircularProgressBar();
+            this.progress_cpu = new CircularProgressBar.CircularProgressBar();
             this.dgv_Proceso = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,8 +56,14 @@
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.lbl_Contador = new System.Windows.Forms.Label();
             this.BtnGrafica = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
+            this.cpu_perf = new System.Diagnostics.PerformanceCounter();
+            this.ram_perf = new System.Diagnostics.PerformanceCounter();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.cpu_l = new System.Windows.Forms.Label();
+            this.ram_l = new System.Windows.Forms.Label();
+            this.disk_l = new System.Windows.Forms.Label();
+            this.progress_disk = new CircularProgressBar.CircularProgressBar();
+            this.disk_perf = new System.Diagnostics.PerformanceCounter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
@@ -76,30 +71,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Grafico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Proceso)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpu_perf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ram_perf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disk_perf)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Interval = 30000;
             // 
-            // pRAM
-            // 
-            this.pRAM.CategoryName = "Memory";
-            this.pRAM.CounterName = "% Committed Bytes In Use";
-            // 
-            // pCPU
-            // 
-            this.pCPU.CategoryName = "Processor";
-            this.pCPU.CounterName = "% Processor Time";
-            this.pCPU.InstanceName = "_Total";
-            // 
             // timer
             // 
             this.timer.Interval = 1000;
-            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // panel1
             // 
@@ -159,104 +144,75 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
-            this.panel3.Controls.Add(this.Grafico);
-            this.panel3.Controls.Add(this.LblPorRAM);
-            this.panel3.Controls.Add(this.LblPorCPU);
-            this.panel3.Controls.Add(this.ProgressBarRAM);
-            this.panel3.Controls.Add(this.LblNombreRam);
-            this.panel3.Controls.Add(this.ProgressBarCPU);
-            this.panel3.Controls.Add(this.LblNombreCPU);
+            this.panel3.Controls.Add(this.disk_l);
+            this.panel3.Controls.Add(this.progress_disk);
+            this.panel3.Controls.Add(this.ram_l);
+            this.panel3.Controls.Add(this.cpu_l);
+            this.panel3.Controls.Add(this.progress_ram);
+            this.panel3.Controls.Add(this.progress_cpu);
             this.panel3.Controls.Add(this.dgv_Proceso);
             this.panel3.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // Grafico
+            // progress_ram
             // 
-            this.Grafico.BackColor = System.Drawing.Color.Transparent;
-            this.Grafico.BackSecondaryColor = System.Drawing.Color.White;
-            this.Grafico.BorderlineWidth = 0;
-            this.Grafico.BorderSkin.BackColor = System.Drawing.Color.Black;
-            this.Grafico.BorderSkin.PageColor = System.Drawing.Color.Black;
-            chartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea3.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea3.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea3.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisY.MinorGrid.LineColor = System.Drawing.Color.White;
-            chartArea3.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea3.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            chartArea3.BorderColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.Grafico.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.Grafico.Legends.Add(legend3);
-            resources.ApplyResources(this.Grafico, "Grafico");
-            this.Grafico.Name = "Grafico";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            series5.LabelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            series5.LabelForeColor = System.Drawing.Color.White;
-            series5.Legend = "Legend1";
-            series5.Name = "CPU";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Font = new System.Drawing.Font("Verdana", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.LabelBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            series6.LabelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            series6.LabelForeColor = System.Drawing.Color.White;
-            series6.Legend = "Legend1";
-            series6.Name = "RAM";
-            this.Grafico.Series.Add(series5);
-            this.Grafico.Series.Add(series6);
+            this.progress_ram.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.progress_ram.AnimationSpeed = 500;
+            this.progress_ram.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            resources.ApplyResources(this.progress_ram, "progress_ram");
+            this.progress_ram.ForeColor = System.Drawing.Color.White;
+            this.progress_ram.InnerColor = System.Drawing.Color.Empty;
+            this.progress_ram.InnerMargin = 2;
+            this.progress_ram.InnerWidth = -1;
+            this.progress_ram.MarqueeAnimationSpeed = 2000;
+            this.progress_ram.Maximum = 12288;
+            this.progress_ram.Name = "progress_ram";
+            this.progress_ram.OuterColor = System.Drawing.Color.DodgerBlue;
+            this.progress_ram.OuterMargin = -25;
+            this.progress_ram.OuterWidth = 26;
+            this.progress_ram.ProgressColor = System.Drawing.Color.AliceBlue;
+            this.progress_ram.ProgressWidth = 25;
+            this.progress_ram.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.progress_ram.StartAngle = 270;
+            this.progress_ram.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progress_ram.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_ram.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.progress_ram.SubscriptText = "";
+            this.progress_ram.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_ram.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.progress_ram.SuperscriptText = "";
+            this.progress_ram.TextMargin = new System.Windows.Forms.Padding(0);
+            this.progress_ram.Value = 12288;
             // 
-            // LblPorRAM
+            // progress_cpu
             // 
-            resources.ApplyResources(this.LblPorRAM, "LblPorRAM");
-            this.LblPorRAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
-            this.LblPorRAM.Name = "LblPorRAM";
-            this.LblPorRAM.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // LblPorCPU
-            // 
-            resources.ApplyResources(this.LblPorCPU, "LblPorCPU");
-            this.LblPorCPU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
-            this.LblPorCPU.Name = "LblPorCPU";
-            this.LblPorCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // ProgressBarRAM
-            // 
-            resources.ApplyResources(this.ProgressBarRAM, "ProgressBarRAM");
-            this.ProgressBarRAM.Name = "ProgressBarRAM";
-            this.ProgressBarRAM.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // LblNombreRam
-            // 
-            resources.ApplyResources(this.LblNombreRam, "LblNombreRam");
-            this.LblNombreRam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
-            this.LblNombreRam.Name = "LblNombreRam";
-            this.LblNombreRam.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // ProgressBarCPU
-            // 
-            resources.ApplyResources(this.ProgressBarCPU, "ProgressBarCPU");
-            this.ProgressBarCPU.Name = "ProgressBarCPU";
-            this.ProgressBarCPU.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // LblNombreCPU
-            // 
-            resources.ApplyResources(this.LblNombreCPU, "LblNombreCPU");
-            this.LblNombreCPU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(105)))), ((int)(((byte)(170)))));
-            this.LblNombreCPU.Name = "LblNombreCPU";
-            this.LblNombreCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.progress_cpu.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.progress_cpu.AnimationSpeed = 500;
+            this.progress_cpu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            resources.ApplyResources(this.progress_cpu, "progress_cpu");
+            this.progress_cpu.ForeColor = System.Drawing.Color.White;
+            this.progress_cpu.InnerColor = System.Drawing.Color.Empty;
+            this.progress_cpu.InnerMargin = 2;
+            this.progress_cpu.InnerWidth = -1;
+            this.progress_cpu.MarqueeAnimationSpeed = 1000;
+            this.progress_cpu.Maximum = 200;
+            this.progress_cpu.Name = "progress_cpu";
+            this.progress_cpu.OuterColor = System.Drawing.Color.Honeydew;
+            this.progress_cpu.OuterMargin = -25;
+            this.progress_cpu.OuterWidth = 26;
+            this.progress_cpu.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.progress_cpu.ProgressWidth = 25;
+            this.progress_cpu.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.progress_cpu.StartAngle = 270;
+            this.progress_cpu.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progress_cpu.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_cpu.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.progress_cpu.SubscriptText = "";
+            this.progress_cpu.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_cpu.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.progress_cpu.SuperscriptText = "";
+            this.progress_cpu.TextMargin = new System.Windows.Forms.Padding(0);
             // 
             // dgv_Proceso
             // 
@@ -264,14 +220,14 @@
             this.dgv_Proceso.AllowUserToDeleteRows = false;
             this.dgv_Proceso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dgv_Proceso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Proceso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Proceso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_Proceso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Proceso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -280,25 +236,25 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Proceso.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Proceso.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_Proceso.EnableHeadersVisualStyles = false;
             this.dgv_Proceso.GridColor = System.Drawing.Color.SteelBlue;
             resources.ApplyResources(this.dgv_Proceso, "dgv_Proceso");
             this.dgv_Proceso.Name = "dgv_Proceso";
             this.dgv_Proceso.ReadOnly = true;
             this.dgv_Proceso.RowHeadersVisible = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.dgv_Proceso.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dgv_Proceso.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_Proceso.RowTemplate.Height = 24;
             this.dgv_Proceso.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_Proceso_MouseClick);
             // 
@@ -380,6 +336,73 @@
             this.BtnGrafica.UseVisualStyleBackColor = false;
             this.BtnGrafica.Click += new System.EventHandler(this.BtnGrafica_Click);
             // 
+            // cpu_perf
+            // 
+            this.cpu_perf.CategoryName = "Processor";
+            this.cpu_perf.CounterName = "% Processor Time";
+            this.cpu_perf.InstanceName = "_Total";
+            // 
+            // ram_perf
+            // 
+            this.ram_perf.CategoryName = "Memory";
+            this.ram_perf.CounterName = "Available MBytes";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 2000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // cpu_l
+            // 
+            resources.ApplyResources(this.cpu_l, "cpu_l");
+            this.cpu_l.Name = "cpu_l";
+            // 
+            // ram_l
+            // 
+            resources.ApplyResources(this.ram_l, "ram_l");
+            this.ram_l.Name = "ram_l";
+            // 
+            // disk_l
+            // 
+            resources.ApplyResources(this.disk_l, "disk_l");
+            this.disk_l.Name = "disk_l";
+            // 
+            // progress_disk
+            // 
+            this.progress_disk.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.progress_disk.AnimationSpeed = 500;
+            this.progress_disk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            resources.ApplyResources(this.progress_disk, "progress_disk");
+            this.progress_disk.ForeColor = System.Drawing.Color.White;
+            this.progress_disk.InnerColor = System.Drawing.Color.Empty;
+            this.progress_disk.InnerMargin = 2;
+            this.progress_disk.InnerWidth = -1;
+            this.progress_disk.MarqueeAnimationSpeed = 1000;
+            this.progress_disk.Maximum = 930;
+            this.progress_disk.Name = "progress_disk";
+            this.progress_disk.OuterColor = System.Drawing.Color.DodgerBlue;
+            this.progress_disk.OuterMargin = -25;
+            this.progress_disk.OuterWidth = 26;
+            this.progress_disk.ProgressColor = System.Drawing.Color.AliceBlue;
+            this.progress_disk.ProgressWidth = 25;
+            this.progress_disk.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.progress_disk.StartAngle = 270;
+            this.progress_disk.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progress_disk.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_disk.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.progress_disk.SubscriptText = "";
+            this.progress_disk.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.progress_disk.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.progress_disk.SuperscriptText = "";
+            this.progress_disk.TextMargin = new System.Windows.Forms.Padding(0);
+            // 
+            // disk_perf
+            // 
+            this.disk_perf.CategoryName = "LogicalDisk";
+            this.disk_perf.CounterName = "% Free Space";
+            this.disk_perf.InstanceName = "_Total";
+            // 
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -393,8 +416,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCPU)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -404,28 +425,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Grafico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Proceso)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpu_perf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ram_perf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disk_perf)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Timer timer1;
-        private System.Diagnostics.PerformanceCounter pRAM;
-        private System.Diagnostics.PerformanceCounter pCPU;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart Grafico;
-        private MetroFramework.Controls.MetroLabel LblPorRAM;
-        private MetroFramework.Controls.MetroLabel LblPorCPU;
-        private MetroFramework.Controls.MetroProgressBar ProgressBarRAM;
-        private MetroFramework.Controls.MetroLabel LblNombreRam;
-        private MetroFramework.Controls.MetroProgressBar ProgressBarCPU;
-        private MetroFramework.Controls.MetroLabel LblNombreCPU;
         private System.Windows.Forms.DataGridView dgv_Proceso;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -443,6 +457,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private CircularProgressBar.CircularProgressBar progress_ram;
+        private CircularProgressBar.CircularProgressBar progress_cpu;
+        private System.Diagnostics.PerformanceCounter cpu_perf;
+        private System.Diagnostics.PerformanceCounter ram_perf;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label ram_l;
+        private System.Windows.Forms.Label cpu_l;
+        private System.Windows.Forms.Label disk_l;
+        private CircularProgressBar.CircularProgressBar progress_disk;
+        private System.Diagnostics.PerformanceCounter disk_perf;
     }
 }
 
